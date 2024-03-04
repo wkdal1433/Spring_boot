@@ -29,7 +29,7 @@ class StatefulServiceTest {
 
         // 따라서 공유 필드를 클라이언트가 값을 변경하도록 설계해선 절대 안된다. 돈과 관련되면 진짜 심각해짐.
         // 이게 진짜 중요한게 이걸 잘못해서 망가진 로그들을 수정하려면 몇달이 걸림.
-        
+
 
         //ThreadA : 사용자 A 주문 금액 조회
 //        int price = statefulService1.getPrice();

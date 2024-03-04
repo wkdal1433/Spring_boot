@@ -1,8 +1,11 @@
 package hello.core.member;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
-
+@Component
 public class MemoryMemberRepository implements MemberRepository{//얘는 MemberRepository의 구현체로
     // 우선은 메모리에 저장해서 조회해보는 간단한 로직만,, 서버 꺼지면 저장 안됨
     private static Map<Long, Member> store = new HashMap<>();
