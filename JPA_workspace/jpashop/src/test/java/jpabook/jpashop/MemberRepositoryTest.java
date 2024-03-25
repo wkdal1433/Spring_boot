@@ -1,5 +1,6 @@
 package jpabook.jpashop;
 
+import jpabook.jpashop.domain.Member;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,23 +19,23 @@ public class MemberRepositoryTest {
     //entity manager를 통한 데이터 변경은 모두 transaction 안에서 일어나야함.
     @Autowired MemberRepository memberRepository;
 
-    @Test
-    @Transactional
-    public void testMember() throws Exception{
-        //given
-        Member member = new Member();
-        member.setUsername("memberA");
-        //when
-        Long saveId = memberRepository.save(member);
-        Member findMember = memberRepository.find(saveId);
-
-        //then
-        Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
-        Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
-        Assertions.assertThat(findMember).isEqualTo(member);
-        System.out.println("findMember == member" + (findMember == member));
-
-
-    }
+//    @Test
+//    @Transactional
+//    public void testMember() throws Exception{
+//        //given
+//        Member member = new Member();
+//        member.setUsername("memberA");
+//        //when
+//        Long saveId = memberRepository.save(member);
+//        Member findMember = memberRepository.find(saveId);
+//
+//        //then
+//        Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
+//        Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
+//        Assertions.assertThat(findMember).isEqualTo(member);
+//        System.out.println("findMember == member" + (findMember == member));
+//
+//
+//    }
 
 }

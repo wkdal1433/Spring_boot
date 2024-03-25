@@ -2,7 +2,6 @@ package jpabook.jpashop.domain;
 
 
 import jakarta.persistence.*;
-import jpabook.jpashop.Member;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,7 +19,7 @@ public class Order {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "delivery_id")
+    @JoinColumn(name = "member_id")
     private Member member; // 주문 회원
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
