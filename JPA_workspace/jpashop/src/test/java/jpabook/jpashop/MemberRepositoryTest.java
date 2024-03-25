@@ -1,6 +1,7 @@
 package jpabook.jpashop;
 
 import jpabook.jpashop.domain.Member;
+import jpabook.jpashop.repository.MemberRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +18,8 @@ import static org.junit.Assert.*;
 @Rollback(value = false)
 public class MemberRepositoryTest {
     //entity manager를 통한 데이터 변경은 모두 transaction 안에서 일어나야함.
-    @Autowired MemberRepository memberRepository;
+    @Autowired
+    MemberRepository memberRepository;
 
 //    @Test
 //    @Transactional
