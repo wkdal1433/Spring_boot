@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cada24cd-87f5-41bc-910b-6c343e1371df" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpashop/src/main/java/jpabook/jpashop/exception/NotEnoughStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpashop/src/main/java/jpabook/jpashop/exception/NotEnoughStockException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jpashop/src/test/java/jpabook/jpashop/service/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpashop/src/test/java/jpabook/jpashop/service/OrderServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,31 +109,7 @@
       <recent name="jpabook.jpashop" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MemberServiceTest.중복_회원_예외">
-    <configuration name="MemberRepositoryTest.testMember" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/jpashop/jpashop" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;jpabook.jpashop.MemberRepositoryTest.testMember&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.OrderServiceTest.상품주문_재고수량초과">
     <configuration name="MemberServiceTest.회원가입" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -180,21 +158,53 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MemberRepositoryTest.testMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jpashop.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jpabook.jpashop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jpabook.jpashop" />
-      <option name="MAIN_CLASS_NAME" value="jpabook.jpashop.MemberRepositoryTest" />
-      <option name="METHOD_NAME" value="testMember" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="OrderServiceTest.상품주문" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/jpashop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;jpabook.jpashop.service.OrderServiceTest.상품주문&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderServiceTest.상품주문_재고수량초과" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/jpashop" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;jpabook.jpashop.service.OrderServiceTest.상품주문_재고수량초과&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -222,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.OrderServiceTest.상품주문_재고수량초과" />
+        <item itemvalue="Gradle.OrderServiceTest.상품주문" />
         <item itemvalue="Gradle.MemberServiceTest.중복_회원_예외" />
         <item itemvalue="Gradle.MemberServiceTest.회원가입" />
         <item itemvalue="Spring Boot.JpashopApplication" />
-        <item itemvalue="JUnit.MemberRepositoryTest.testMember" />
-        <item itemvalue="Gradle.MemberRepositoryTest.testMember" />
       </list>
     </recent_temporary>
   </component>
@@ -247,12 +257,22 @@
       <workItem from="1711350450036" duration="8740000" />
       <workItem from="1711436330925" duration="4487000" />
       <workItem from="1711599618980" duration="1620000" />
-      <workItem from="1711611427502" duration="4488000" />
+      <workItem from="1711611427502" duration="6157000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.AssertionError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
