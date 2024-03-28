@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cada24cd-87f5-41bc-910b-6c343e1371df" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpashop/src/main/java/jpabook/jpashop/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpashop/src/main/java/jpabook/jpashop/domain/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jpashop/src/test/java/jpabook/jpashop/service/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jpashop/src/test/java/jpabook/jpashop/service/OrderServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +247,7 @@
       <workItem from="1711350450036" duration="8740000" />
       <workItem from="1711436330925" duration="4487000" />
       <workItem from="1711599618980" duration="1620000" />
-      <workItem from="1711611427502" duration="3650000" />
+      <workItem from="1711611427502" duration="4488000" />
     </task>
     <servers />
   </component>
