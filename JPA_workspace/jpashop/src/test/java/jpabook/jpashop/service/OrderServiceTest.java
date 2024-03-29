@@ -9,6 +9,7 @@ import jpabook.jpashop.domain.item.Book;
 import jpabook.jpashop.domain.item.Item;
 import jpabook.jpashop.exception.NotEnoughStockException;
 import jpabook.jpashop.repository.OrderRepository;
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +52,7 @@ public class OrderServiceTest {
 
     }
 
-    @Test(expected = NotEnoughStockException.class)
+    @Test
     public void 상품주문_재고수량초과() throws Exception{
         //given
         Member member = createMember();
@@ -60,22 +61,32 @@ public class OrderServiceTest {
         int orderCount =11;
 
         //when
-        orderService.order(member.getId(),item.getId(),orderCount);
+        assertThrows(NotEnoughStockException.class, () -> orderService.order(member.getId(), item.getId(), orderCount));
 
         //then
-        fail("재고 수량 부족 예외가 발생해야 한다.");
+//        fail("재고 수량 부족 예외가 발생해야 한다.");
 
     }
 
     @Test
     public void 주문취소() throws Exception{
         //given
+        Member member = createMember();
+        Book item = createBook("시골 JPA", 10000, 10);
 
+        int orderCount = 2;
+
+        Long orderId = orderService.order(member.getId(), item.getId(), orderCount);
         //when
+        orderService.cancelOrder(orderId);
+
 
         //then
+        Order getOrder = orderRepository.findOne(orderId);
 
-      }
+        assertEquals("주문 취소시 상태는 CANCEL 이다.", OrderStatus.CANCEL,getOrder.getStatus());
+        assertEquals("주문이 취소된 상품은 그만큼 재고가 증가해야 한다.",10, item.getStockQuantity());
+    }
 
     private Book createBook(String name, int price, int stockQuantity) {
         Book book = new Book();
