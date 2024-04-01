@@ -10,6 +10,7 @@ public class BookForm {
 
     @NotEmpty(message = "아이템 이름은 필수 입니다.")
     private String name;
+
     private int price;
     private int stockQuantity;
 
