@@ -5,9 +5,12 @@ import jpabook.jpashop.domain.item.Item;
 import jpabook.jpashop.repository.ItemRepository;
 import jpabook.jpashop.repository.MemberRepository;
 import jpabook.jpashop.repository.OrderRepository;
+import jpabook.jpashop.repository.OrderSearch;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
@@ -60,11 +63,11 @@ public class OrderService {
     }
 
     /**주문 검색*/
-/*
+
     public List<Order> findOrders(OrderSearch orderSearch){
-        return orderRepository.findAll(orderSearch);
+        return orderRepository.findAllByString(orderSearch);
     }
-*/
+
 
 
 
