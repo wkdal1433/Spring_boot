@@ -46,6 +46,7 @@ public class ItemController {
 
     }
 
+    // asdfㅁㄴㅇㄻㄴㅇㄹ
 
     @GetMapping("/items")
     public String list(Model model){
